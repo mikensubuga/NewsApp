@@ -2,15 +2,6 @@
 
 > A  beautiful animated news application that is production ready, which was built using one of the most popular JavaScript Framework for building interactive user interfaces Vue.js along with Vuetify, a Vue powered UI library to speed up the Application UI construction.
 
-## Project Overview
-
-![News Application Rachid Sakara](https://i.ibb.co/dc56dbh/Feature-Article.png?raw=true)
-
-![News Application Rachid Sakara](https://i.ibb.co/zNggXk3/Default.png?raw=true)
-
-![News Application Rachid Sakara](https://i.ibb.co/rd2RTDd/News-Application.png?raw=true)
-
-![News Application Rachid Sakara](https://i.ibb.co/yWSP5Rz/Beautiful-News-Application-with-Vue-Js-and-Vuetify.png?raw=true)
 
 
 ## Setup Your Free API Key
