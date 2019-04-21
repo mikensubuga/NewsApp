@@ -2,7 +2,7 @@
 
     <v-layout row wrap align-center>
           
-          <v-flex xs8  offset-md2>
+          <v-flex xs12 md8  offset-md2>
             <div v-for="article in articles" :key="article.title">
               <v-card class="my-3" hover data-aos="zoom-in" data-aos-easing="ease">
                 <v-img
@@ -16,7 +16,6 @@
                       </v-flex>
                     </v-layout>
                   </v-container>
-                </v-card-media>
                 <v-card-text>
                   {{ article.description }}
                 </v-card-text>
@@ -29,9 +28,7 @@
 
                 <v-spacer></v-spacer>
 
-                <v-btn icon class="red--text">
-                  <v-icon small>fa-reddit</v-icon>
-                </v-btn>
+                
                 <v-btn icon class="light-blue--text">
                   <v-icon small>fa-twitter</v-icon>
                 </v-btn>
@@ -39,9 +36,7 @@
                   <v-icon small>fa-facebook</v-icon>
                 </v-btn>
 
-                <v-btn icon class="red--text">
-                  <v-icon small>fa-google-plus</v-icon>
-                </v-btn>
+               
 
                 <v-btn icon class="blue--text text--darken-4">
                   <v-icon small>fa-linkedin</v-icon>
