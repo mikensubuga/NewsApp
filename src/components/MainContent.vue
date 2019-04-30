@@ -33,19 +33,7 @@
                 <v-spacer></v-spacer>
 
                 
-                <v-btn icon class="light-blue--text">
-                  <v-icon small>fa-twitter</v-icon>
-                </v-btn>
-                <v-btn icon class="blue--text text--darken-4">
-                  <v-icon small>fa-facebook</v-icon>
-                </v-btn>
-
-               
-
-                <v-btn icon class="blue--text text--darken-4">
-                  <v-icon small>fa-linkedin</v-icon>
-                </v-btn>
-                
+              
                 
                 <v-spacer></v-spacer>
 

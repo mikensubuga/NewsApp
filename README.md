@@ -1,31 +1,5 @@
-# vue-news-app
+# News Collection Point
 
-> A  beautiful animated news application that is production ready, which was built using one of the most popular JavaScript Framework for building interactive user interfaces Vue.js along with Vuetify, a Vue powered UI library to speed up the Application UI construction.
-
-
-
-## Setup Your Free API Key
-
-> To fetch the news data from the [News API](https://newsapi.org/) backend server, we'll need to generate a new Api Key. To do so, head over to the News API official site and click on the “Get API key” button to register for a new account. 
-
-> Once the registration process is done, you’ll be redirect to dashboard where the API key is already generated for you. 
-
-> Now, to implement your key, open the `/src/App.vue` file. Then, inside the `<script>` tag put you key to where it said: 'Put_Your_API_Key_Here' as shown below:
-
-```
-<script>
-...
-data() {
-    return {
-      drawer: true, // true to show/hide the side navigation drawer 
-      api_key: 'Put_Your_API_Key_Here',
-      articles: [],
-      errors: [] 
-    }
-  },
-...
-</script>
-```
 
 ## Build Setup
 
@@ -43,4 +17,3 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

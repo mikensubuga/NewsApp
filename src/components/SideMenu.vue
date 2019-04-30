@@ -7,7 +7,7 @@
         v-for="source in sources"
         :key="source.id"
         @click="selectSource(source.id)"
-        active-class="black"
+        active-class="black--text"
       >
         <v-list-tile-action>
           <v-avatar size="32px">
