@@ -3,13 +3,16 @@
   <v-navigation-drawer v-model="drawer" fixed app clipped class="drawer-style"   id="style-1">
 
     <v-list dense class="pt-3  white--text" >
+      <!-- Looping through sources and getting each source -->
       <v-list-tile
+      
         v-for="source in sources"
         :key="source.id"
         @click="selectSource(source.id)"
         active-class="black--text"
       >
         <v-list-tile-action>
+          <!-- displaying the source image -->
           <v-avatar size="32px">
                 <img
                   class="img-circle elevation-7 mb-1"
@@ -17,7 +20,7 @@
           </v-avatar>
 
         </v-list-tile-action>
-
+          <!-- Displaying the source Name -->
         <v-list-tile-content>
           <v-list-tile-title>{{ source.name }}</v-list-tile-title>
         </v-list-tile-content>

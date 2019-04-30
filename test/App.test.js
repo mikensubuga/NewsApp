@@ -1,20 +1,28 @@
-import Vue from "vue";
-import App from "../src/App";
+import axios from "axios";
+const MockAdapter = require("axios-mock-adapter");
+const mock = new MockAdapter(axios);
 
-describe("App.test.js", () => {
-  let cmp, vm;
+import { shallowMount } from "@vue/test-utils";
 
+//import main content component with articles
+import MainContent from "../src/components/MainContent";
+
+describe("ArticlesList", () => {
+  afterAll(() => {
+    mock.restore();
+  });
   beforeEach(() => {
-    cmp = Vue.extend(App); // Create a copy of the original component
-    vm = new cmp({
-      data: {
-        // test data
-        articles: []
-      }
-    }).$mount(); // Instances and mounts the component
+    mock.reset();
   });
 
-  it('equals messages to ["Cat"]', () => {
-    expect(vm.articles).toEqual([""]);
+  it("loads articles", async () => {
+    mock
+      .onGet("https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=7a3d862b78044e49a716dbb9cf56460d")
+      .reply(200);   //Test to check if status code of system is 200(http ok)
+
+    const wrapper = shallowMount(MainContent);
+    await wrapper.vm.loadUsers();
+    const listItems = wrapper.findAll("li");
+    expect(listItems).toHaveLength(3);
   });
 });
