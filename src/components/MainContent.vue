@@ -10,10 +10,14 @@
                   v-bind:src="article.urlToImage"
                 ></v-img>
                   <v-container fill-height fluid>
+                      
+
                     <v-layout>
+                      
                       <v-flex xs12 align-end d-flex>
                         <span class="headline">{{ article.title }}</span>
                       </v-flex>
+
                     </v-layout>
                   </v-container>
                 <v-card-text>

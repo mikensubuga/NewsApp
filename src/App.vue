@@ -9,6 +9,7 @@
   <v-toolbar fixed app light clipped-left color="primary" class="elevation-2">
     <v-toolbar-side-icon @click="drawer = !drawer"  class="white--text"></v-toolbar-side-icon>
     <v-toolbar-title class="white--text">News Collection Point</v-toolbar-title>
+    
   </v-toolbar>
 
   <v-content>
